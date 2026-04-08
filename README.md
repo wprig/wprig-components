@@ -30,6 +30,10 @@ The `WP Rig Component Registry` plugin requires a GitHub Personal Access Token (
 2. Enter the **Repository Owner**, **Repository Name** (`wprig-components`), and the **Personal Access Token**.
 3. Use **Test Connection** to verify.
 
+## Components Index
+
+For a full list of components available in this registry, see [REGISTRY.md](REGISTRY.md).
+
 ## Implementation Guides
 
 Detailed implementation guides for starter components are available in the `docs/` folder:
