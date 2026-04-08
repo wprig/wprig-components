@@ -1,0 +1,17 @@
+{
+  "slug": "kinetic-typography",
+  "version": "1.0.0",
+  "title": "Kinetic Typography Engine",
+  "description": "High-performance text animations (splitting, skewing, fluid transitions) for editorial themes.",
+  "php_class_mapping": {
+    "Kinetic_Typography": "inc/Kinetic_Typography"
+  },
+  "asset_mapping": {
+    "js": { "src": "assets/js/src/kinetic-type.ts" },
+    "css": { "src": "assets/css/src/components/_kinetic-type.css" }
+  },
+  "ai_context": {
+    "spec": "SPEC.md",
+    "skill": "SKILL.md"
+  }
+}

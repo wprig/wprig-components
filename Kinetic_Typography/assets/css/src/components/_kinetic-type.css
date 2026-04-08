@@ -1,0 +1,65 @@
+/**
+ * Kinetic Typography Engine Styles
+ *
+ * Performance-optimized text animations using CSS variables.
+ */
+
+.wprig-kinetic-text {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.wprig-kinetic-text .char {
+    display: inline-block;
+    will-change: transform, opacity;
+}
+
+/* 1. Reveal Animation */
+[data-wprig-kinetic="reveal"] .char {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+                opacity 0.6s linear;
+    transition-delay: calc(var(--char-index) * 0.05s);
+}
+
+.wprig-kinetic-text[data-wprig-kinetic="reveal"].is-animating .char {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* 2. Float Animation */
+@keyframes kinetic-float {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(0, -10px, 0); }
+}
+
+[data-wprig-kinetic="float"].is-animating .char {
+    animation: kinetic-float 3s ease-in-out infinite;
+    animation-delay: calc(var(--char-index) * 0.1s);
+}
+
+/* 3. Skew Animation */
+[data-wprig-kinetic="skew"] .char {
+    opacity: 0;
+    transform: skewX(-20deg) translate3d(20px, 0, 0);
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1),
+                opacity 0.8s linear;
+    transition-delay: calc(var(--char-index) * 0.03s);
+}
+
+.wprig-kinetic-text[data-wprig-kinetic="skew"].is-animating .char {
+    opacity: 1;
+    transform: skewX(0) translate3d(0, 0, 0);
+}
+
+/* Accessibility: Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .wprig-kinetic-text .char {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}

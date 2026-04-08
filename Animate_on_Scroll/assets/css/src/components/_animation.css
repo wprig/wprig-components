@@ -1,0 +1,55 @@
+/**
+ * Animate on Scroll (AOS) Styles
+ *
+ * Performance-optimized animations using transform and opacity.
+ */
+
+/* Initial state for elements with data-wprig-aos */
+[data-wprig-aos] {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    will-change: transform, opacity;
+}
+
+/* Delay modifiers */
+[data-wprig-aos][data-wprig-aos-delay="200"] { transition-delay: 200ms; }
+[data-wprig-aos][data-wprig-aos-delay="400"] { transition-delay: 400ms; }
+[data-wprig-aos][data-wprig-aos-delay="600"] { transition-delay: 600ms; }
+
+/* Duration modifiers */
+[data-wprig-aos][data-wprig-aos-duration="400"] { transition-duration: 400ms; }
+[data-wprig-aos][data-wprig-aos-duration="800"] { transition-duration: 800ms; }
+
+/* Animation Types: Initial states */
+[data-wprig-aos="fade-up"] {
+    transform: translate3d(0, 20px, 0);
+}
+
+[data-wprig-aos="fade-down"] {
+    transform: translate3d(0, -20px, 0);
+}
+
+[data-wprig-aos="fade-in"] {
+    transform: translate3d(0, 0, 0);
+}
+
+[data-wprig-aos="zoom-in"] {
+    transform: scale3d(0.9, 0.9, 1);
+}
+
+/* Active state (triggered by JS) */
+[data-aos-state="visible"] {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+}
+
+/* Accessibility: Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    [data-wprig-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}

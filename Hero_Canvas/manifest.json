@@ -1,0 +1,16 @@
+{
+  "slug": "hero-canvas",
+  "version": "1.0.0",
+  "title": "Hero Canvas (Three.js / WebGL)",
+  "description": "A high-impact visual background component for theme headers using Three.js.",
+  "php_class_mapping": {
+    "Hero_Canvas": "inc/Hero_Canvas"
+  },
+  "asset_mapping": {
+    "js": { "src": "assets/js/src/hero-canvas.ts" }
+  },
+  "ai_context": {
+    "spec": "SPEC.md",
+    "skill": "SKILL.md"
+  }
+}

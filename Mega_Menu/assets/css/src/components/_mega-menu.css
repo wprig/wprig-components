@@ -1,0 +1,83 @@
+/**
+ * Mega Menu Builder Styles
+ *
+ * Modern 4-column dropdown using CSS Grid.
+ */
+
+/* 1. Reset/Layout */
+.main-navigation ul.mega-menu-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    width: 100vw;
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+/* 2. Show on Hover/Focus */
+.main-navigation li.has-mega-menu:hover > .mega-menu-content,
+.main-navigation li.has-mega-menu:focus-within > .mega-menu-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 3. Columns */
+.mega-menu-column {
+    list-style: none;
+}
+
+.mega-menu-column > a {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* 4. Sub-items within columns */
+.mega-menu-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mega-menu-column ul li a {
+    padding: 0.5rem 0;
+    display: block;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.mega-menu-column ul li a:hover {
+    color: #000;
+}
+
+/* 5. Responsive */
+@media (max-width: 1024px) {
+    .main-navigation ul.mega-menu-content {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-navigation ul.mega-menu-content {
+        position: static;
+        grid-template-columns: 1fr;
+        width: 100%;
+        transform: none;
+        box-shadow: none;
+        padding: 0 1rem;
+    }
+}

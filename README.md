@@ -30,6 +30,14 @@ The `WP Rig Component Registry` plugin requires a GitHub Personal Access Token (
 2. Enter the **Repository Owner**, **Repository Name** (`wprig-components`), and the **Personal Access Token**.
 3. Use **Test Connection** to verify.
 
+## Implementation Guides
+
+Detailed implementation guides for starter components are available in the `docs/` folder:
+- [Hero-Canvas (Three.js / WebGL)](docs/guide-hero-canvas.md)
+- [Mega-Menu Builder (Source-First)](docs/guide-mega-menu.md)
+- [Kinetic Typography Engine](docs/guide-kinetic-typography.md)
+- [Native Animate on Scroll (AOS)](docs/guide-animate-on-scroll.md)
+
 ## Contributing
 
 To submit new components or update existing ones, use the `rig:submit` command from the WP Rig CLI. Each submission should follow the standard WP Rig component structure.

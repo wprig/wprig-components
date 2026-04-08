@@ -42,3 +42,7 @@ tmp/
 temp/
 .sass-cache/
 /docs
+/wprig
+/wprig/*
+/wprig/**/*
+/wprig/
