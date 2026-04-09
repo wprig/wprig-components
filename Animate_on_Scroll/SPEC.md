@@ -17,7 +17,7 @@ A performance-first animation-on-scroll system that uses the native `Intersectio
 - `data-aos-state`: Set by JS to `visible` when the animation should trigger.
 
 ## 4. PHP Implementation Details
-- **Namespace**: `WP_Rig\WP_Rig\Animation`
+- **Namespace**: `WP_Rig\WP_Rig\Animate_on_Scroll`
 - **Class**: `Component` implements `Component_Interface`
 - **Target Blocks**: `core/group`, `core/image`, `core/heading`, `core/media-text` (Hardcoded for now).
 - **Filter**: `render_block` at priority 10.
@@ -33,8 +33,8 @@ A performance-first animation-on-scroll system that uses the native `Intersectio
 - `unobserve` element after it becomes visible to ensure it only animates once.
 
 ## 7. Registry Mapping (`manifest.json`)
-- **Slug**: `animation`
-- **PHP Mapping**: `Animation`: `inc/Animation` (When extracted into the theme).
+- **Slug**: `animate-on-scroll`
+- **PHP Mapping**: `Animate_on_Scroll`: `inc/Animate_on_Scroll` (When extracted into the theme).
 - **Asset Mapping**:
-    - `js`: `assets/js/src/animation.ts`
-    - `css`: `assets/css/src/components/_animation.css`
+    - `js`: `assets/js/animation.ts`
+    - `css`: `assets/css/animation.css`

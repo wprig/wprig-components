@@ -13,7 +13,7 @@ Instructions for AI Agents to use and modify the Animate on Scroll component.
 
 ## Guidelines for Modification
 - **Adding New Animations**:
-  1. Add the CSS definition in `assets/css/src/components/_animation.css` using `[data-wprig-aos="new-type"]`.
+  1. Add the CSS definition in `assets/css/animation.css` using `[data-wprig-aos="new-type"]`.
   2. Ensure the initial state is set via the selector (e.g., `opacity: 0; transform: translateY(20px);`).
   3. Ensure the active state is set via `[data-aos-state="visible"]`.
 - **Performance**:

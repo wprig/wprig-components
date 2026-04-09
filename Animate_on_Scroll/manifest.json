@@ -1,14 +1,14 @@
 {
-  "slug": "animation",
+  "slug": "animate-on-scroll",
   "version": "1.0.0",
   "title": "Animate on Scroll (AOS)",
   "description": "Ultra-lightweight Intersection Observer implementation to replace heavy AOS plugins.",
   "php_class_mapping": {
-    "Animation": "inc/Animation"
+    "Animate_on_Scroll": "inc/Animate_on_Scroll"
   },
   "asset_mapping": {
-    "js": { "src": "assets/js/src/animation.ts" },
-    "css": { "src": "assets/css/src/components/_animation.css" }
+    "js": { "src": "assets/js/animation.ts" },
+    "css": { "src": "assets/css/animation.css" }
   },
   "ai_context": {
     "spec": "SPEC.md",

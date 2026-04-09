@@ -1,11 +1,11 @@
 <?php
 /**
- * WP_Rig\WP_Rig\Animation\Component class
+ * WP_Rig\WP_Rig\Animate_on_Scroll\Component class
  *
  * @package wp_rig
  */
 
-namespace WP_Rig\WP_Rig\Animation;
+namespace WP_Rig\WP_Rig\Animate_on_Scroll;
 
 use WP_Rig\WP_Rig\Component_Interface;
 use WP_Rig\WP_Rig\Asset_Provider;
@@ -25,7 +25,7 @@ class Component implements Component_Interface, Asset_Provider {
 	 * @return string Component slug.
 	 */
 	public function get_slug(): string {
-		return 'animation';
+		return 'animate-on-scroll';
 	}
 
 	/**
@@ -51,7 +51,7 @@ class Component implements Component_Interface, Asset_Provider {
 			),
 			'styles'  => array(
 				'wp-rig-animation' => array(
-					'file' => 'components/animation.css', // This will be the compiled CSS.
+					'file' => 'animation.css', // This will be the compiled CSS.
 				),
 			),
 		);

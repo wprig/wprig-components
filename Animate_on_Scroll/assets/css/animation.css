@@ -8,19 +8,11 @@
 [data-wprig-aos] {
     opacity: 0;
     transition-property: transform, opacity;
-    transition-duration: 0.6s;
+    transition-duration: var(--wprig-aos-duration, 0.6s);
+    transition-delay: var(--wprig-aos-delay, 0s);
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     will-change: transform, opacity;
 }
-
-/* Delay modifiers */
-[data-wprig-aos][data-wprig-aos-delay="200"] { transition-delay: 200ms; }
-[data-wprig-aos][data-wprig-aos-delay="400"] { transition-delay: 400ms; }
-[data-wprig-aos][data-wprig-aos-delay="600"] { transition-delay: 600ms; }
-
-/* Duration modifiers */
-[data-wprig-aos][data-wprig-aos-duration="400"] { transition-duration: 400ms; }
-[data-wprig-aos][data-wprig-aos-duration="800"] { transition-duration: 800ms; }
 
 /* Animation Types: Initial states */
 [data-wprig-aos="fade-up"] {
@@ -33,6 +25,14 @@
 
 [data-wprig-aos="fade-in"] {
     transform: translate3d(0, 0, 0);
+}
+
+[data-wprig-aos="fade-left"] {
+    transform: translate3d(-20px, 0, 0);
+}
+
+[data-wprig-aos="fade-right"] {
+    transform: translate3d(20px, 0, 0);
 }
 
 [data-wprig-aos="zoom-in"] {
