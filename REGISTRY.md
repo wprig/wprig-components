@@ -20,7 +20,7 @@ The following JSON block provides machine-readable information about the registr
 ```json
 {
   "registry_name": "WP Rig OCR (Open Component Registry)",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "base_url": "https://github.com/wprig/wprig-components",
   "components": [
     {
