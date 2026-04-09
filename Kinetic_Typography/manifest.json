@@ -1,6 +1,6 @@
 {
   "slug": "kinetic-typography",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Kinetic Typography Engine",
   "description": "High-performance text animations (splitting, skewing, fluid transitions) for editorial themes.",
   "php_class_mapping": {

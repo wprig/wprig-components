@@ -1,6 +1,6 @@
 {
   "slug": "mega-menu",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Mega Menu Builder",
   "description": "CSS Grid-based expansion for WP Rig’s core navigation to support multi-column dropdowns.",
   "php_class_mapping": {
