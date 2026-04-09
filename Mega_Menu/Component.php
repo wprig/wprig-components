@@ -51,7 +51,7 @@ class Component implements Component_Interface, Asset_Provider {
 			),
 			'styles'  => array(
 				'wp-rig-mega-menu' => array(
-					'file' => 'mega-menu.css',
+					'file' => 'mega-menu.min.css',
 				),
 			),
 		);

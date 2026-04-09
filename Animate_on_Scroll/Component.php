@@ -51,7 +51,7 @@ class Component implements Component_Interface, Asset_Provider {
 			),
 			'styles'  => array(
 				'wp-rig-animation' => array(
-					'file' => 'animation.css', // This will be the compiled CSS.
+					'file' => 'animation.min.css', // This will be the compiled CSS.
 				),
 			),
 		);
