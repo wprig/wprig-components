@@ -15,11 +15,11 @@ Instructions for AI Agents to use and modify the Mega Menu Builder.
 
 ## Guidelines for Modification
 - **Changing Grid Layout**:
-  1. Modify `assets/css/src/components/_mega-menu.css`.
+  1. Modify `assets/css/mega-menu.css`.
   2. Change the `grid-template-columns` property for `.mega-menu-content`.
-- **Adding Featured Images**:
-  1. Modify the `Mega_Menu_Walker` to check for `_thumbnail_id` meta on the menu item.
-  2. Output the featured image markup within the column.
+- **Accessibility**:
+  1. Modify `assets/js/mega-menu.ts` to handle new ARIA states.
+  2. Ensure keyboard navigation is maintained.
 - **Performance**:
   - Keep JS interaction handling minimal.
   - Rely on CSS `:hover` or the `aria-expanded` toggle provided by WP Rig core.

@@ -7,7 +7,8 @@
     "Mega_Menu": "inc/Mega_Menu"
   },
   "asset_mapping": {
-    "css": { "src": "assets/css/src/components/_mega-menu.css" }
+    "js": { "src": "assets/js/mega-menu.ts" },
+    "css": { "src": "assets/css/mega-menu.css" }
   },
   "ai_context": {
     "spec": "SPEC.md",

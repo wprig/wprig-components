@@ -49,7 +49,7 @@ class Component implements Component_Interface, Asset_Provider {
 			),
 			'styles'  => array(
 				'wp-rig-kinetic-typography' => array(
-					'file' => 'components/kinetic-type.css',
+					'file' => 'kinetic-type.css',
 				),
 			),
 		);

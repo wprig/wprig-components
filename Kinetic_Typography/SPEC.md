@@ -35,5 +35,5 @@ A performance-first kinetic typography system that splits text into individual c
 - **Slug**: `kinetic-typography`
 - **PHP Mapping**: `Kinetic_Typography`: `inc/Kinetic_Typography`
 - **Asset Mapping**:
-    - `js`: `assets/js/src/kinetic-type.ts`
-    - `css`: `assets/css/src/components/_kinetic-type.css`
+    - `js`: `assets/js/kinetic-type.ts`
+    - `css`: `assets/css/kinetic-type.css`

@@ -42,14 +42,9 @@ class Component implements Component_Interface, Asset_Provider {
 	public function get_asset_manifest(): array {
 		return array(
 			'scripts' => array(
-				'three-js'           => array(
-					'file'     => 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js',
-					'external' => true,
-				),
 				'wp-rig-hero-canvas' => array(
 					'file'     => 'hero-canvas.min.js',
 					'strategy' => 'async',
-					'deps'     => array( 'three-js' ),
 				),
 			),
 		);

@@ -43,9 +43,15 @@ class Component implements Component_Interface, Asset_Provider {
 	 */
 	public function get_asset_manifest(): array {
 		return array(
-			'styles' => array(
+			'scripts' => array(
 				'wp-rig-mega-menu' => array(
-					'file' => 'components/mega-menu.css',
+					'file'     => 'mega-menu.min.js',
+					'strategy' => 'async',
+				),
+			),
+			'styles'  => array(
+				'wp-rig-mega-menu' => array(
+					'file' => 'mega-menu.css',
 				),
 			),
 		);

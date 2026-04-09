@@ -15,7 +15,7 @@ Instructions for AI Agents to use and modify the Kinetic Typography component.
 
 ## Guidelines for Modification
 - **Adding New Animation Types**:
-  1. Add a new keyframe or transition in `assets/css/src/components/_kinetic-type.css`.
+  1. Add a new keyframe or transition in `assets/css/kinetic-type.css`.
   2. Map it to a new `data-wprig-kinetic` value (e.g., `glitch`).
   3. Ensure it uses the `--char-index` for staggered motion.
 - **Performance**:

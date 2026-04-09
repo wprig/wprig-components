@@ -13,14 +13,17 @@
     width: 100vw;
     max-width: 1200px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translate3d(0, 10px, 0);
     background: #fff;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+                opacity 0.3s linear,
+                visibility 0.3s;
     z-index: 100;
+    will-change: transform, opacity;
 }
 
 /* 2. Show on Hover/Focus */
@@ -28,6 +31,7 @@
 .main-navigation li.has-mega-menu:focus-within > .mega-menu-content {
     opacity: 1;
     visibility: visible;
+    transform: translateX(-50%) translate3d(0, 0, 0);
 }
 
 /* 3. Columns */
@@ -79,5 +83,12 @@
         transform: none;
         box-shadow: none;
         padding: 0 1rem;
+    }
+}
+
+/* 6. Accessibility: Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .main-navigation ul.mega-menu-content {
+        transition: none !important;
     }
 }

@@ -7,7 +7,7 @@
     "Hero_Canvas": "inc/Hero_Canvas"
   },
   "asset_mapping": {
-    "js": { "src": "assets/js/src/hero-canvas.ts" }
+    "js": { "src": "assets/js/hero-canvas.ts" }
   },
   "ai_context": {
     "spec": "SPEC.md",

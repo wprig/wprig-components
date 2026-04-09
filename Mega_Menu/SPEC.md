@@ -31,4 +31,5 @@ A modern, accessible mega menu system that leverages CSS Grid for responsive 4-c
 - **Slug**: `mega-menu`
 - **PHP Mapping**: `Mega_Menu`: `inc/Mega_Menu`
 - **Asset Mapping**:
-    - `css`: `assets/css/src/components/_mega-menu.css`
+    - `js`: `assets/js/mega-menu.ts`
+    - `css`: `assets/css/mega-menu.css`

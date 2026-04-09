@@ -7,8 +7,8 @@
     "Kinetic_Typography": "inc/Kinetic_Typography"
   },
   "asset_mapping": {
-    "js": { "src": "assets/js/src/kinetic-type.ts" },
-    "css": { "src": "assets/css/src/components/_kinetic-type.css" }
+    "js": { "src": "assets/js/kinetic-type.ts" },
+    "css": { "src": "assets/css/kinetic-type.css" }
   },
   "ai_context": {
     "spec": "SPEC.md",

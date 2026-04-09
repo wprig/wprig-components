@@ -1,4 +1,4 @@
-# SKILL.md: Hero Canvas (Three.js / WebGL)
+# SKILL.md: Hero Canvas (Raw Canvas)
 
 Instructions for AI Agents to use and modify the Hero Canvas component.
 
@@ -17,8 +17,8 @@ Instructions for AI Agents to use and modify the Hero Canvas component.
 ## Guidelines for Modification
 - **Changing Animation Type**:
   1. Modify the `hero-canvas.ts` file.
-  2. Implement a new `THREE.Mesh` or `THREE.Points` object.
-  3. Ensure you are using `THREE.BufferGeometry` for large point counts to keep performance high.
+  2. Implement a new draw loop in the `animate()` function.
+  3. Use `ctx.beginPath()`, `ctx.arc()`, etc., for drawing.
 - **Performance**:
   - NEVER run expensive calculations in the `animate()` loop if not necessary.
   - ALWAYS use `pointer-events: none` on the canvas to allow clicking through to links.
