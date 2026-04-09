@@ -2,15 +2,22 @@
  * Animate on Scroll (AOS) Styles
  *
  * Performance-optimized animations using transform and opacity.
+ * Optimized for minimal footprint and elegant motion.
  */
+
+:root {
+    --wprig-aos-duration: 0.6s;
+    --wprig-aos-delay: 0s;
+    --wprig-aos-easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 
 /* Initial state for elements with data-wprig-aos */
 [data-wprig-aos] {
     opacity: 0;
     transition-property: transform, opacity;
-    transition-duration: var(--wprig-aos-duration, 0.6s);
-    transition-delay: var(--wprig-aos-delay, 0s);
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: var(--wprig-aos-duration);
+    transition-delay: var(--wprig-aos-delay);
+    transition-timing-function: var(--wprig-aos-easing);
     will-change: transform, opacity;
 }
 
@@ -19,24 +26,12 @@
     transform: translate3d(0, 20px, 0);
 }
 
-[data-wprig-aos="fade-down"] {
-    transform: translate3d(0, -20px, 0);
-}
-
 [data-wprig-aos="fade-in"] {
     transform: translate3d(0, 0, 0);
 }
 
-[data-wprig-aos="fade-left"] {
-    transform: translate3d(-20px, 0, 0);
-}
-
-[data-wprig-aos="fade-right"] {
-    transform: translate3d(20px, 0, 0);
-}
-
 [data-wprig-aos="zoom-in"] {
-    transform: scale3d(0.9, 0.9, 1);
+    transform: scale3d(0.95, 0.95, 1);
 }
 
 /* Active state (triggered by JS) */

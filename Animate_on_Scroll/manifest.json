@@ -1,6 +1,6 @@
 {
   "slug": "animate-on-scroll",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "Animate on Scroll (AOS)",
   "description": "Ultra-lightweight Intersection Observer implementation to replace heavy AOS plugins.",
   "php_class_mapping": {
