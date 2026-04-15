@@ -44,4 +44,4 @@ Detailed implementation guides for starter components are available in the `docs
 
 ## Contributing
 
-To submit new components or update existing ones, use the `rig:submit` command from the WP Rig CLI. Each submission should follow the standard WP Rig component structure.
+We welcome contributions to the WP Rig Component Registry! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions on how to submit new components, update existing ones, and follow our coding standards.
