@@ -1,0 +1,13 @@
+{
+  "slug": "tgm-plugin-activation",
+  "version": "1.0.0",
+  "title": "TGM Plugin Activation",
+  "description": "Easily require or recommend plugins for your WP Rig theme using the industry-standard TGMPA library.",
+  "php_class_mapping": {
+    "TGM_Plugin_Activation": "inc/TGM_Plugin_Activation"
+  },
+  "ai_context": {
+    "spec": "SPEC.md",
+    "skill": "SKILL.md"
+  }
+}

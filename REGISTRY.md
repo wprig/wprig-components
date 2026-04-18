@@ -10,6 +10,7 @@ This is the main registry index for WP Rig components. WP Rig can use this file 
 | `hero-canvas` | **Hero Canvas (Three.js / WebGL)** | 1.1.0 | `Hero_Canvas` | A high-impact visual background component using Three.js. |
 | `kinetic-typography` | **Kinetic Typography Engine** | 1.1.0 | `Kinetic_Typography` | High-performance text animations for editorial themes. |
 | `mega-menu` | **Mega Menu Builder** | 1.1.0 | `Mega_Menu` | CSS Grid-based expansion for WP Rig core navigation. |
+| `tgm-plugin-activation` | **TGM Plugin Activation** | 1.0.0 | `TGM_Plugin_Activation` | Easily require or recommend plugins for your WP Rig theme. |
 
 ---
 
@@ -20,7 +21,7 @@ The following JSON block provides machine-readable information about the registr
 ```json
 {
   "registry_name": "WP Rig OCR (Open Component Registry)",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "base_url": "https://github.com/wprig/wprig-components",
   "components": [
     {
@@ -50,6 +51,13 @@ The following JSON block provides machine-readable information about the registr
       "version": "1.1.0",
       "path": "Mega_Menu",
       "manifest": "Mega_Menu/manifest.json"
+    },
+    {
+      "slug": "tgm-plugin-activation",
+      "title": "TGM Plugin Activation",
+      "version": "1.0.0",
+      "path": "TGM_Plugin_Activation",
+      "manifest": "TGM_Plugin_Activation/manifest.json"
     }
   ]
 }
